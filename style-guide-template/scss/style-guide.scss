@@ -9,6 +9,20 @@ $color-2: #19191a; // Dark Blue
 $color-3: #e4655f; // Red
 $color-4: #e6e6e6; // light grey
 $color-5: #ffffff; // white
+$mainPurp: #582A72; // Main Purple
+$darkPurp: #2A023f; //Dark Purple
+$lightPurp: #77518C;
+$mainPink: #892E61;
+$darkPink: #6B0C42;
+$lightPink: #A85D87;
+$mainGreen: #7c9F35;
+$darkGreen: #597C0E;
+$lightGreen: #A6C36C;
+$mainYellow: #ABAB39;
+$darkYellow: #5F5F00;
+$lightYellow: #F7F7BE;
+
+
 
 // additional colors
 
@@ -146,6 +160,68 @@ main > h1 {
 		color: $color-5;
 	}
 }
+
+/* xColor section - basic style */
+
+.cd-colors b {
+  display: block;
+  padding: .6em 0; }
+.cd-colors li:nth-of-type(1) .cd-color-swatch {
+  background: $mainPurp; }
+  .cd-colors li:nth-of-type(1) .cd-color-swatch::before {
+    background: $lightPurp; }
+  .cd-colors li:nth-of-type(1) .cd-color-swatch::after {
+    background: $darkPurp; }
+.cd-colors li:nth-of-type(2) .cd-color-swatch {
+  background: $mainPink; }
+  .cd-colors li:nth-of-type(2) .cd-color-swatch::before {
+    background: $lightPink; }
+  .cd-colors li:nth-of-type(2) .cd-color-swatch::after {
+    background: $darkPink; }
+.cd-colors li:nth-of-type(3) .cd-color-swatch {
+  background: $mainGreen; }
+  .cd-colors li:nth-of-type(3) .cd-color-swatch::before {
+    background: $lightGreen; }
+  .cd-colors li:nth-of-type(3) .cd-color-swatch::after {
+    background: $darkGreen; }
+.cd-colors li:nth-of-type(4) .cd-color-swatch {
+  background: $mainYellow; }
+  .cd-colors li:nth-of-type(4) .cd-color-swatch::before {
+    background: $lightYellow; }
+  .cd-colors li:nth-of-type(4) .cd-color-swatch::after {
+    background: $darkYellow; }
+.cd-colors li:nth-of-type(5) .cd-color-swatch {
+  background: #ffffff; }
+  .cd-colors li:nth-of-type(5) .cd-color-swatch::before {
+    background: white; }
+  .cd-colors li:nth-of-type(5) .cd-color-swatch::after {
+    background: #f2f2f2; }
+
+
+
+
+@media only screen and (min-width: 768px) {
+  .cd-colors li {
+    width: 19%;
+    float: left;
+    margin: 0 1.25% 1em 0; }
+    .cd-colors li:nth-of-type(2n) {
+      margin-right: 1.25%; }
+    .cd-colors li:nth-of-type(5n) {
+      margin-right: 0; } }
+
+.cd-typography .cd-box,
+.cd-buttons .cd-box,
+.cd-icons .cd-box,
+.cd-form .cd-box {
+  padding: 1em; }
+  @media only screen and (min-width: 768px) {
+    .cd-typography .cd-box .cd-box,
+    .cd-buttons .cd-box .cd-box,
+    .cd-icons .cd-box .cd-box,
+    .cd-form .cd-box .cd-box {
+      padding: 2em; } }
+
 
 /* -------------------------------- 
 
