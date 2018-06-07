@@ -15,7 +15,7 @@ xPatterns
 -------------------------------- */
 .cd-box {
   /* this is the container of various design elements - i.e. the 2 logo of the branding section */
-  border: 1px solid #e6e6e6;
+  border: 1px solid #ABAB39;
   border-radius: 3px;
   background: #ffffff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -27,11 +27,11 @@ xNavigation
 
 -------------------------------- */
 header {
-  background-color: #19191a; }
+  background-color: #892E61; }
 
 .cd-logo {
   /* logo box style */
-  background-color: #5f8ee4;
+  background-color: #582A72;
   width: 120px; }
   @media only screen and (min-width: 1024px) {
     .cd-logo {
@@ -39,16 +39,16 @@ header {
 
 .cd-main-nav {
   /* main navigation background color - full screen on small devices */
-  background: #19191a; }
+  background: #892E61; }
   .cd-main-nav li a {
     color: #ffffff;
-    border-color: #262627; }
+    border-color: #9c346f; }
   @media only screen and (min-width: 1024px) {
     .cd-main-nav li a {
-      color: #7d7d82; }
+      color: #e0a3c5; }
       .cd-main-nav li a.selected {
         color: #ffffff;
-        box-shadow: 0 2px 0 #5f8ee4; }
+        box-shadow: 0 2px 0 #582A72; }
       .no-touch .cd-main-nav li a:hover {
         color: #ffffff; } }
 
@@ -68,16 +68,16 @@ header {
 
 .cd-download {
   /* download button top-right visible on big devices */
-  background-color: #323234; }
+  background-color: #af3b7c; }
   .no-touch .cd-download:hover {
-    background-color: #3f3f41; }
+    background-color: #c04389; }
   .cd-download span {
     /* tooltip */
-    background: #5f8ee4;
+    background: #582A72;
     color: #ffffff; }
     .cd-download span::before {
       /* right arrow color */
-      border-color: #5f8ee4; }
+      border-color: #582A72; }
 
 /* -------------------------------- 
 
@@ -85,7 +85,7 @@ xPage title
 
 -------------------------------- */
 main > h1 {
-  color: #19191a; }
+  color: #892E61; }
   @media only screen and (min-width: 1600px) {
     main > h1 {
       /* title goes into the header on big devices */
@@ -171,7 +171,7 @@ xTypography
 -------------------------------- */
 h1, h2 {
   font-family: "Audiowide", sans-serif;
-  color: #19191a; }
+  color: #892E61; }
 
 h1 {
   font-size: 2.4rem;
@@ -196,14 +196,14 @@ h2 {
 
 section > h2::before {
   /* number before each section title */
-  color: silver; }
+  color: #727226; }
 
 p {
   font-size: 1.4rem;
   line-height: 1.4;
-  color: #58585b; }
+  color: #cd6aa1; }
   p a {
-    color: #5f8ee4;
+    color: #582A72;
     text-decoration: underline; }
   @media only screen and (min-width: 768px) {
     p {
@@ -227,33 +227,33 @@ xButtons
   color: #ffffff;
   padding: .6em 2.2em;
   cursor: pointer;
-  background: #5f8ee4; }
+  background: #582A72; }
   .btn:focus {
     outline: none; }
   .no-touch .btn:hover {
-    background: #759de8; }
+    background: #663185; }
   .btn.btn-success {
     background: #6fce72; }
     .no-touch .btn.btn-success:hover {
       background: #82d485; }
   .btn.btn-alert {
-    background: #e4655f; }
+    background: #7c9F35; }
     .no-touch .btn.btn-alert:hover {
-      background: #e87a75; }
+      background: #8bb23b; }
   .btn.btn-outline {
-    color: #5f8ee4;
+    color: #582A72;
     background: transparent;
-    box-shadow: inset 0 0 0 1px #5f8ee4; }
+    box-shadow: inset 0 0 0 1px #582A72; }
     .no-touch .btn.btn-outline:hover {
       color: #ffffff;
-      background: #5f8ee4; }
+      background: #582A72; }
   @media only screen and (min-width: 768px) {
     .btn {
       font-size: 1.6rem; } }
 
 .cd-buttons .cd-box:nth-of-type(2) span {
   /* CSS class name color */
-  color: #5f8ee4; }
+  color: #582A72; }
 
 /* -------------------------------- 
 
@@ -271,7 +271,7 @@ xForm
 
 -------------------------------- */
 input[type=text], select {
-  border: 1px solid #e6e6e6;
+  border: 1px solid #ABAB39;
   border-radius: .25em;
   background: #ffffff; }
   input[type=text]:focus, select:focus {
@@ -284,11 +284,11 @@ input[type=text] {
     border-color: #6fce72;
     box-shadow: 0 0 6px rgba(111, 206, 114, 0.2); }
   input[type=text].alert {
-    border-color: #e4655f;
-    box-shadow: 0 0 6px rgba(228, 101, 95, 0.2); }
+    border-color: #7c9F35;
+    box-shadow: 0 0 6px rgba(124, 159, 53, 0.2); }
   input[type=text]:focus {
-    border-color: #5f8ee4;
-    box-shadow: 0 0 6px rgba(95, 142, 228, 0.2); }
+    border-color: #582A72;
+    box-shadow: 0 0 6px rgba(88, 42, 114, 0.2); }
 
 input[type=radio],
 input[type=checkbox] {
@@ -324,7 +324,7 @@ input[type=checkbox] {
   .radio-label::before,
   .checkbox-label::before {
     left: 0;
-    border: 1px solid #e6e6e6;
+    border: 1px solid #ABAB39;
     box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03); }
   .radio-label::after,
   .checkbox-label::after {
@@ -340,7 +340,7 @@ input[type=checkbox] {
 
 input[type=radio]:checked + label::before,
 input[type=checkbox]:checked + label::before {
-  background-color: #19191a;
+  background-color: #892E61;
   border: none;
   box-shadow: none; }
 
@@ -758,29 +758,29 @@ section {
   display: block;
   padding: .6em 0; }
 .cd-colors li:nth-of-type(1) .cd-color-swatch {
-  background: #5f8ee4; }
+  background: #582A72; }
   .cd-colors li:nth-of-type(1) .cd-color-swatch::before {
-    background: #759de8; }
+    background: #663185; }
   .cd-colors li:nth-of-type(1) .cd-color-swatch::after {
-    background: #497fe0; }
+    background: #4a235f; }
 .cd-colors li:nth-of-type(2) .cd-color-swatch {
-  background: #19191a; }
+  background: #892E61; }
   .cd-colors li:nth-of-type(2) .cd-color-swatch::before {
-    background: #262627; }
+    background: #9c346f; }
   .cd-colors li:nth-of-type(2) .cd-color-swatch::after {
-    background: #0d0d0d; }
+    background: #762853; }
 .cd-colors li:nth-of-type(3) .cd-color-swatch {
-  background: #e4655f; }
+  background: #7c9F35; }
   .cd-colors li:nth-of-type(3) .cd-color-swatch::before {
-    background: #e87a75; }
+    background: #8bb23b; }
   .cd-colors li:nth-of-type(3) .cd-color-swatch::after {
-    background: #e05049; }
+    background: #6d8c2f; }
 .cd-colors li:nth-of-type(4) .cd-color-swatch {
-  background: #e6e6e6; }
+  background: #ABAB39; }
   .cd-colors li:nth-of-type(4) .cd-color-swatch::before {
-    background: #f3f3f3; }
+    background: #bebe3f; }
   .cd-colors li:nth-of-type(4) .cd-color-swatch::after {
-    background: #d9d9d9; }
+    background: #989833; }
 .cd-colors li:nth-of-type(5) .cd-color-swatch {
   background: #ffffff; }
   .cd-colors li:nth-of-type(5) .cd-color-swatch::before {
@@ -812,7 +812,7 @@ section {
 /* xTypography section - basic style */
 .cd-typography h1::before {
   content: 'Aa - ';
-  color: #5f8ee4; }
+  color: #582A72; }
 
 .cd-buttons .cd-box:first-of-type {
   border-bottom-left-radius: 0;

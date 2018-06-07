@@ -4,11 +4,7 @@
 
 // color palette - these colors will be the color swatches of the Colors section
 
-$color-1: #5f8ee4; // Cornflower Blue - Action color
-$color-2: #19191a; // Dark Blue
-$color-3: #e4655f; // Red
-$color-4: #e6e6e6; // light grey
-$color-5: #ffffff; // white
+
 $mainPurp: #582A72; // Main Purple
 $darkPurp: #2A023f; //Dark Purple
 $lightPurp: #77518C;
@@ -21,6 +17,12 @@ $lightGreen: #A6C36C;
 $mainYellow: #ABAB39;
 $darkYellow: #5F5F00;
 $lightYellow: #F7F7BE;
+$color-1: $mainPurp; // Cornflower Blue - Action color
+$color-2: $mainPink; // Dark Blue
+$color-3: $mainGreen; // Red
+$color-4: $mainYellow; // light grey
+$color-5: #ffffff; // white
+
 
 
 
