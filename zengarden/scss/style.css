@@ -535,6 +535,9 @@ p {
 nav {
   font-family: "Audiowide", sans-serif; }
 
+h1 {
+  color: blue; }
+
 /* ------- Basic ------ */
 html,
 body {
