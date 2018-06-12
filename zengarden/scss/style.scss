@@ -9,3 +9,23 @@ body {
 div {
     min-height: 100vh;
 }
+
+/* -- Variables -- */
+
+$mainPurp: #582A72; // Main Purple
+$darkPurp: #2A023f; //Dark Purple
+$lightPurp: #77518C;
+$mainPink: #892E61;
+$darkPink: #6B0C42;
+$lightPink: #A85D87;
+$mainGreen: #7c9F35;
+$darkGreen: #597C0E;
+$lightGreen: #A6C36C;
+$mainYellow: #ABAB39;
+$darkYellow: #5F5F00;
+$lightYellow: #F7F7BE;
+$color-1: $mainPurp; // Cornflower Blue - Action color
+$color-2: $mainPink; // Dark Blue
+$color-3: $mainGreen; // Red
+$color-4: $mainYellow; // light grey
+$color-5: #ffffff; // white
