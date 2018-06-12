@@ -17,6 +17,16 @@ div {
 
 /* -- Variables -- */
 
+// additional colors
+
+$success: #6fce72; // green
+$alert: $color-3;  // red
+
+// font variables
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+$primary-font: 'Helvetica', sans-serif;
+$secondary-font: 'Audiowide', sans-serif;
+
 $mainPurp: #582A72; // Main Purple
 $darkPurp: #2A023f; //Dark Purple
 $lightPurp: #77518C;
