@@ -45,4 +45,61 @@ p {
 nav {
   font-family: "Audiowide", sans-serif; }
 
+/*
+SPacing
+*/
+#zen-intro {
+  background-image: url(../../images/zen.svg); }
+
+header {
+  margin-top: 7em;
+  line-height: .01em;
+  margin-left: 8%; }
+
+header h2 {
+  font-size: 15px; }
+
+#zen-summary {
+  margin-left: 8%;
+  width: 40%;
+  margin-bottom: 7em; }
+
+#zen-summary p {
+  font-size: 1em; }
+
+.summary:after {
+  width: 100px;
+  height: 100px;
+  background: red;
+  border: 1px solid red; }
+
+#zen-preamble h3 {
+  text-align: center; }
+
+#zen-preamble {
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-bottom: 7em; }
+
+#zen-preamble p {
+  font-size: 1em; }
+
+#zen-explanation {
+  margin-left: 15%;
+  width: 70%;
+  margin-bottom: 7em; }
+
+.explanation p:nth-last-child(1) {
+  margin-left: 7%;
+  margin-top: 3em; }
+
+.explanation p::nth-word(1) {
+  font-size: 3em; }
+
+#zen-explanation h3 {
+  font-size: 2em; }
+
+#zen-explanation p {
+  font-size: 1em; }
+
 /*# sourceMappingURL=style.css.map */

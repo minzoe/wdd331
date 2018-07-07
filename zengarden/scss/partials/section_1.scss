@@ -1,0 +1,38 @@
+/*
+SPacing
+*/
+
+#zen-intro{
+    background-image: url(../../images/zen.svg);
+}
+
+header{
+    margin-top: 7em;
+    line-height: .01em;
+    margin-left: 8%;
+    
+}
+
+header h2{
+    font-size: 15px;
+}
+
+#zen-summary{
+    margin-left: 8%;
+    width: 40%; 
+    margin-bottom: 7em;
+    
+}
+#zen-summary p{
+    font-size: 1em;
+}
+.summary:after{
+     width: 100px;
+	height: 100px;
+	background: red;
+    border: 1px solid red;
+	//-moz-border-radius: 50px;
+	//-webkit-border-radius: 50px;
+	//border-radius: 50%;
+}
+
