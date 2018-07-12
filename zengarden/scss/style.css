@@ -49,7 +49,11 @@ nav {
 SPacing
 */
 #zen-intro {
-  background-image: url(../../images/zen.svg); }
+  overflow: hidden;
+  background-image: url(../images/zen.svg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 80% 0%; }
 
 header {
   margin-top: 7em;
@@ -67,22 +71,33 @@ header h2 {
 #zen-summary p {
   font-size: 1em; }
 
-.summary:after {
-  width: 100px;
-  height: 100px;
-  background: red;
-  border: 1px solid red; }
-
 #zen-preamble h3 {
   text-align: center; }
 
 #zen-preamble {
-  margin-left: 8%;
-  margin-right: 8%;
-  margin-bottom: 7em; }
+  background-color: beige;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 1em;
+  padding-top: 1em; }
 
 #zen-preamble p {
-  font-size: 1em; }
+  font-size: 1em;
+  padding-left: 19%; }
+
+.preamble:before {
+  content: "";
+  display: block;
+  position: relative;
+  float: left;
+  top: -75px;
+  width: 150px;
+  height: 150px;
+  background: #447fde;
+  background: linear-gradient(120deg, #447fde 0%, #00d46c 100%, white 100%);
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50%; }
 
 #zen-explanation {
   margin-left: 15%;

@@ -3,11 +3,31 @@
 }
 
 #zen-preamble{
-    margin-left: 8%;
-    margin-right: 8%;
-    margin-bottom: 7em;
+    background-color: beige;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 1em;
+    padding-top: 1em;
 
 }
 #zen-preamble p{
     font-size: 1em;
+    padding-left: 19%;
+    //text-align: center;
+}
+
+.preamble:before{
+    content: "";
+    display: block;
+    position: relative;
+    float: left;
+    top: -75px;
+     width: 150px;
+	height: 150px;
+	background: rgb(68,127,222);
+background: linear-gradient(120deg, rgba(68,127,222,1) 0%, rgba(0,212,108,1) 100%, rgba(255,255,255,1) 100%);
+    //border: 1px solid red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50%;
 }
