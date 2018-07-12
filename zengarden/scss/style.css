@@ -53,7 +53,8 @@ SPacing
   background-image: url(../images/zen.svg);
   background-size: 50%;
   background-repeat: no-repeat;
-  background-position: 80% 0%; }
+  background-position: 80% 0%;
+  background-color: #F7F7BE; }
 
 header {
   margin-top: 7em;
@@ -75,7 +76,7 @@ header h2 {
   text-align: center; }
 
 #zen-preamble {
-  background-color: beige;
+  background-color: #A6C36C;
   padding-left: 8%;
   padding-right: 8%;
   padding-bottom: 1em;
@@ -83,7 +84,8 @@ header h2 {
 
 #zen-preamble p {
   font-size: 1em;
-  padding-left: 19%; }
+  padding-left: 19%;
+  color: #000; }
 
 .preamble:before {
   content: "";
@@ -93,11 +95,12 @@ header h2 {
   top: -75px;
   width: 150px;
   height: 150px;
-  background: #447fde;
-  background: linear-gradient(120deg, #447fde 0%, #00d46c 100%, white 100%);
+  background: #597c0e;
+  background: linear-gradient(120deg, #597c0e 0%, #2f72de 100%, #f7f7be 100%);
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.35); }
 
 #zen-explanation {
   margin-left: 15%;
