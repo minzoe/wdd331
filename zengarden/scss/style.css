@@ -1,39 +1,38 @@
 /* -- Variables -- */
 @import url("https://fonts.googleapis.com/css?family=Audiowide");
-h1, h2 {
+h1, h2, h3 {
   font-family: "Audiowide", sans-serif;
   color: #892E61; }
-
-h1 {
-  font-size: 2.4rem;
-  font-weight: 300;
-  line-height: 1.2;
-  margin: 0 0 .4em;
-  	/*@include MQ(S) {
-  		font-size: 3.2rem;
-  	}
-  
-  	@include MQ(M) {
-  		font-size: 4rem;
-  	}*/ }
-
-h2 {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 1em 0;
-  /*@include MQ(S) {
-  	font-size: 1.8rem;
-  	margin: 1em 0 1.4em;
-  }*/ }
+  h1 h1, h2 h1, h3 h1 {
+    font-size: 2.4rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0 0 .4em;
+    	/*@include MQ(S) {
+    		font-size: 3.2rem;
+    	}
+    
+    	@include MQ(M) {
+    		font-size: 4rem;
+    	}*/ }
+  h1 h2, h2 h2, h3 h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1em 0;
+    /*@include MQ(S) {
+    	font-size: 1.8rem;
+    	margin: 1em 0 1.4em;
+    }*/ }
 
 section > h2::before {
   /* number before each section title */
   color: #727226; }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1rem;
   line-height: 1.4;
   color: #cd6aa1;
+  font-family: "Helvetica", sans-serif;
   /*@include MQ(S) {
   	font-size: 1.6rem;
   	line-height: 1.6;
