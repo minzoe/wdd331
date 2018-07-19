@@ -1,0 +1,113 @@
+.sidebar {
+    background-color: black;
+    padding: 1em;
+    background-image: radial-gradient(#2A023f 50%, darkblue 100%); // display: flex;
+    overflow-y: hidden;
+    li {
+        color: white;
+    }
+    a {
+        color: lightblue;
+    }
+    h3 {
+        color: #A85D87;
+    }
+    .wrapper {
+        display: flex;
+        position: relative;
+        div {
+            position: absolute;
+            &:nth-child(2) {
+                right: 1em;
+                text-align: right;
+            }
+            &:nth-child(3) {
+                bottom: 1em;
+                text-align: center;
+                width: 100%;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+        }
+        &::before {
+            content: "";
+            background-image: url(../../images/Spiral_Galaxy.svg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: 450px;
+            width: 450px;
+            height: 450px;
+            animation: rotate 2s infinite linear;
+            position: relative;
+            top: 50%;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .sidebar {
+        overflow-y: auto;
+        .wrapper {
+            display: flex;
+            position: relative;
+            div {
+                position: absolute;
+                &:nth-child(1) {
+                    text-align: center;
+                    width: 100%;
+                }
+                &:nth-child(2) {
+                    bottom: 1em;
+                    right: 0;
+                    text-align: center;
+                    width: 100%;
+                }
+                &:nth-child(3) {
+                    bottom: -8em;
+                    text-align: center;
+                    width: 100%;
+                }
+                ul {
+                    list-style: none;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(359deg);
+    }
+}
+
+// .extra {
+//     &1 {
+//         width: 450px;
+//         height: 450px;
+//         background-image: url(../../images/Spiral_Galaxy.svg);
+//         background-repeat: no-repeat;
+//         background-size: 450px;
+//         animation: rotate 2s infinite linear;
+//         position: relative;
+//         top: -430px;
+//         left: 150px;
+//     }
+//     &2 {
+//         width: 150px;
+//         height: 200px;
+//         border-radius: 50%;
+//         box-shadow: 30px 0 15px 1px red;
+//         position: relative;
+//         top: -450px;
+//         left: 500px;
+//         transform: rotateZ(45deg);
+//     }
+// }
