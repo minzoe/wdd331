@@ -60,8 +60,18 @@ header {
   line-height: .01em;
   margin-left: 8%; }
 
+header h1 {
+  animation: appear 1s linear; }
+
 header h2 {
-  font-size: 15px; }
+  font-size: 15px;
+  animation: appear 3s linear; }
+
+.summary p:nth-last-child(2) {
+  animation: appear 5s linear; }
+
+.summary p:nth-last-child(1) {
+  animation: appear 6s linear; }
 
 #zen-summary {
   margin-left: 8%;
@@ -71,6 +81,11 @@ header h2 {
 #zen-summary p {
   font-size: 1em; }
 
+@keyframes appear {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 #zen-preamble h3 {
   text-align: center; }
 
@@ -99,8 +114,14 @@ header h2 {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50%;
-  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.35); }
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.35);
+  animation: spin 3s linear infinite; }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 #zen-explanation {
   padding-left: 15%;
   width: 80%;
