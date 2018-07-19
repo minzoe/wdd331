@@ -53,7 +53,7 @@ SPacing
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: 80% 0%;
-  background-color: #F7F7BE; }
+  background-color: #A6C36C; }
 
 header {
   margin-top: 7em;
@@ -75,7 +75,7 @@ header h2 {
   text-align: center; }
 
 #zen-preamble {
-  background-color: #A6C36C;
+  background-color: #F7F7BE;
   padding-left: 8%;
   padding-right: 8%;
   padding-bottom: 1em;
@@ -102,31 +102,110 @@ header h2 {
   box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.35); }
 
 #zen-explanation {
-  margin-left: 15%;
-  width: 70%;
-  margin-bottom: 7em;
-  display: grid;
-  grid-template-rows: 50px 50px 50px;
-  grid-template-columns: 100px 1fr 1fr 1fr; }
+  padding-left: 15%;
+  width: 80%;
+  margin-bottom: 9em;
+  position: relative; }
 
-.explanation p:nth-last-child(1) {
-  margin-left: 7%;
-  margin-top: 3em;
-  display: contents; }
-  .explanation p:nth-last-child(1):after {
+.explanation:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: purple; }
+.explanation:before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  z-index: -1;
+  position: absolute;
+  left: .5em;
+  top: 4em;
+  background-color: red; }
+
+#zen-explanation h3 {
+  font-size: 2em; }
+  #zen-explanation h3:after {
     content: "";
     display: block;
     width: 100px;
     height: 100px;
-    background-color: purple;
-    grid-column: 2/2;
-    grid-row: 1/1; }
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
+    left: .65em;
+    top: 5em;
+    background-color: blue; }
+  #zen-explanation h3:before {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
+    left: 2em;
+    top: 8.5em;
+    background-color: orange; }
+
+.explanation p:nth-last-child(1) {
+  margin-left: 7%;
+  margin-top: 3em; }
+  .explanation p:nth-last-child(1):after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
+    top: 19em;
+    left: 9em;
+    background-color: purple; }
+  .explanation p:nth-last-child(1):before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
+    top: 21.5em;
+    left: 19em;
+    background-color: rosybrown; }
+
+.explanation p:after {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  z-index: -1;
+  position: absolute;
+  top: 22em;
+  left: 28em;
+  background-color: lightyellow; }
+.explanation p:before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: green;
+  position: absolute;
+  top: 22em;
+  left: 35em; }
 
 .explanation p::nth-word(1) {
   font-size: 3em; }
-
-#zen-explanation h3 {
-  font-size: 2em; }
 
 #zen-explanation p {
   font-size: 1em; }
