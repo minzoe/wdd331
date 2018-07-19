@@ -8,15 +8,13 @@ SPacing
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: 80% 0%;
-    
-    //border: 1px solid #000;
     background-color: $lightGreen;
 
 }
 
 
 header{
-    margin-top: 7em;
+    padding-top: 7em;
     line-height: .01em;
     margin-left: 8%;
     
@@ -27,23 +25,20 @@ header h1{
 
 header h2{
     font-size: 15px;
-    
     animation: appear 3s linear;
-    //animation-delay: 1s;
+    
 }
 .summary p:nth-last-child(2){
     animation: appear 5s linear;
-    //animation-delay: 3s;
 }
 .summary p:nth-last-child(1){
     animation: appear 6s linear;
-    //animation-delay: 5s;
 }
 
 #zen-summary{
     margin-left: 8%;
-    width: 40%; 
-    margin-bottom: 7em;
+    width: 80%; 
+    margin-bottom: 5em;
     
 }
 #zen-summary p{
@@ -53,5 +48,14 @@ header h2{
 @keyframes appear{
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+@media screen and (min-width: 768px){
+    #zen-summary{
+    margin-left: 8%;
+    width: 40%; 
+    margin-bottom: 7em;
+    
+}
 }
 

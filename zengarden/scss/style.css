@@ -56,7 +56,7 @@ SPacing
   background-color: #A6C36C; }
 
 header {
-  margin-top: 7em;
+  padding-top: 7em;
   line-height: .01em;
   margin-left: 8%; }
 
@@ -75,8 +75,8 @@ header h2 {
 
 #zen-summary {
   margin-left: 8%;
-  width: 40%;
-  margin-bottom: 7em; }
+  width: 80%;
+  margin-bottom: 5em; }
 
 #zen-summary p {
   font-size: 1em; }
@@ -86,6 +86,11 @@ header h2 {
     opacity: 0; }
   to {
     opacity: 1; } }
+@media screen and (min-width: 768px) {
+  #zen-summary {
+    margin-left: 8%;
+    width: 40%;
+    margin-bottom: 7em; } }
 #zen-preamble h3 {
   text-align: center; }
 
@@ -140,7 +145,7 @@ header h2 {
     border-radius: 50%;
     z-index: -1;
     position: absolute;
-    left: 0;
+    left: .1em;
     top: 0;
     background: #ada8a5;
     background: linear-gradient(90deg, #ada8a5 36%, #8c8c94 62%, #68696d 100%); }
@@ -152,13 +157,14 @@ header h2 {
     border-radius: 50%;
     z-index: -1;
     position: absolute;
-    left: .5em;
+    left: .1em;
     top: 4em;
     background: #f8e2b0;
     background: linear-gradient(180deg, #f8e2b0 22%, #e3bb76 53%, #ad8d54 100%); }
 
 #zen-explanation h3 {
   font-size: 2em;
+  color: black;
   margin-top: 0; }
   #zen-explanation h3:after {
     content: "";
@@ -168,7 +174,7 @@ header h2 {
     border-radius: 50%;
     z-index: -1;
     position: absolute;
-    left: .65em;
+    left: .1em;
     top: 5em;
     background: linear-gradient(120deg, #597c0e 0%, #2f72de 100%, #f7f7be 100%); }
   #zen-explanation h3:before {
@@ -179,8 +185,8 @@ header h2 {
     border-radius: 50%;
     z-index: -1;
     position: absolute;
-    left: 2em;
-    top: 8.5em;
+    left: .5em;
+    top: 9em;
     background: #451804;
     background: linear-gradient(240deg, #451804 23%, #c1440e 54%, #e77d11 100%); }
 
@@ -195,8 +201,8 @@ header h2 {
     border-radius: 50%;
     z-index: -1;
     position: absolute;
-    top: 19em;
-    left: 9em;
+    top: 23em;
+    left: .5em;
     background: #507992;
     background: linear-gradient(200deg, #507992 23%, #cea589 57%, #c17d6b 100%); }
   .explanation p:nth-last-child(1):before {
@@ -207,8 +213,8 @@ header h2 {
     border-radius: 50%;
     z-index: -1;
     position: absolute;
-    top: 21.5em;
-    left: 19em;
+    top: 33em;
+    left: 1em;
     background: #ceb8b8;
     background: linear-gradient(300deg, #ceb8b8 23%, #ead6b8 71%, #bfbdaf 100%); }
 
@@ -223,8 +229,8 @@ header h2 {
     border-radius: 50%;
     z-index: -1;
     position: absolute;
-    top: 22em;
-    left: 28em;
+    top: 40em;
+    left: 5em;
     background: #afdbf5;
     background: linear-gradient(10deg, #afdbf5 37%, #62aee7 68%, #2e84ce 100%); }
   .explanation p:before {
@@ -235,8 +241,8 @@ header h2 {
     border-radius: 50%;
     z-index: -1;
     position: absolute;
-    top: 22em;
-    left: 35em;
+    top: 41em;
+    left: 12em;
     background: #5b5ddf;
     background: linear-gradient(90deg, #3f54ba 0%, #9ba3d9 61%, #85addb 100%); }
 
@@ -245,5 +251,64 @@ header h2 {
 
 #zen-explanation p {
   font-size: 1em; }
+
+@media screen and (min-width: 768px) {
+  #zen-explanation {
+    padding-bottom: 9em; }
+
+  /*****1st group*****/
+  .explanation:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .explanation:before {
+    content: "";
+    display: block;
+    left: .5em;
+    top: 4em; }
+
+  /*******2nd group************/
+  #zen-explanation h3:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: .65em;
+    top: 5em; }
+  #zen-explanation h3:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 2em;
+    top: 8.5em; }
+
+  /***3rd group***/
+  .explanation p:nth-last-child(1):after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 19em;
+    left: 9em; }
+  .explanation p:nth-last-child(1):before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 21.5em;
+    left: 19em; }
+
+  /***4th group***/
+  .explanation p:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 22em;
+    left: 28em; }
+  .explanation p:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 22em;
+    left: 35em; } }
 
 /*# sourceMappingURL=style.css.map */
