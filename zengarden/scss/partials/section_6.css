@@ -3,10 +3,10 @@
   background-color: black;
   background-repeat: repeat;
   background-size: 50px;
-  -webkit-mask-image: url(../../images/Star_background.svg);
-  mask-image: url(../../images/Star_background.svg);
+  -webkit-mask-image: url("../../images/Star_background.svg");
+  mask-image: url("../../images/Star_background.svg");
   -webkit-mask-size: 200px;
-  mask-size: 100px;
+  mask-size: 200px;
   mask-repeat: repeat;
   -webkit-mask-repeat: repeat; }
   .requirements p {
