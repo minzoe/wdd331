@@ -1,16 +1,4 @@
 
-$offset: 50px !default;
-$blur-radius: 50px !default;
-$spread-radius: 16px !default;
-
-$faded-narrow-offset: 20px !default;
-$faded-narrow-blur-radius: 20px !default;
-$faded-narrow-spread-radius: 10px !default;
-
-$faded-wide-offset: 80px !default;
-$faded-wide-blur-radius: 80px !default;
-$faded-wide-spread-radius: 28px !default;
-
 .participation {
     overflow: hidden;
     background-image: url(../images/milky-way.jpg);
@@ -22,22 +10,6 @@ $faded-wide-spread-radius: 28px !default;
     // padding-left: 3em;
     // padding-right: 3em;
     // padding-bottom: 1em;
-
-    &:after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 82%;
-        left: 0;
-        width: 100%;
-        height: 35%;
-        border-collapse: separate;
-        
-        box-shadow: inset 0 $offset $blur-radius (-$spread-radius), 
-        inset 0 (-$offset) $blur-radius (-$spread-radius);
-
-        z-index: 1;
-    }
 
     p {
         color: $color-5;
