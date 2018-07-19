@@ -310,5 +310,14 @@ header h2 {
     position: absolute;
     top: 22em;
     left: 35em; } }
+.participation {
+  overflow: hidden;
+  background-image: url(../images/milky-way.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  padding: 1em 3em 1em 2em; }
+  .participation p {
+    color: #C0C0C0; }
 
 /*# sourceMappingURL=style.css.map */

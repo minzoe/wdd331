@@ -1,0 +1,16 @@
+.participation {
+    overflow: hidden;
+    background-image: url(../images/milky-way.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    padding: 1em 3em 1em 2em;
+    // padding-top: 1em;
+    // padding-left: 3em;
+    // padding-right: 3em;
+    // padding-bottom: 1em;
+
+    p {
+        color: $lightGrey;
+    }
+}
