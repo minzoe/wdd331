@@ -3,13 +3,32 @@
     margin-left: 15%;
     width: 70%;
     margin-bottom: 7em;
+    display: grid;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: 100px 1fr 1fr 1fr;
+    
+    //position: relative;
+}
 
+.explanation{
+    
 }
 
 .explanation p:nth-last-child(1){
    margin-left: 7%;
     margin-top: 3em;
+    display: contents;
+    &:after{
+        content: "";
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: purple;
+        grid-column: 2/2;
+        grid-row: 1/1;
+    }
 }
+
 
 .explanation p::nth-word(1){
     font-size: 3em;
