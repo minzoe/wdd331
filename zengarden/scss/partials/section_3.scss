@@ -1,24 +1,38 @@
 $width: 100px;
 $hieght: 100px;
+$planetz: -1;
+$suntospace: linear-gradient(180deg, rgba(247,247,190,1) 0%, rgba(150,150,116,1) 19%, rgba(0,0,0,1) 56%);
+$mercury: linear-gradient(90deg, rgba(173,168,165,1) 36%, rgba(140,140,148,1) 62%, rgba(104,105,109,1) 100%);
+$venus: linear-gradient(180deg, rgba(248,226,176,1) 22%, rgba(227,187,118,1) 53%, rgba(173,141,84,1) 100%);
+$earth: linear-gradient(120deg, rgba(89,124,14,1) 0%, rgba(47,114,222,1) 100%, rgba(247,247,190,1) 100%);
+$mars: linear-gradient(240deg, rgba(69,24,4,1) 23%, rgba(193,68,14,1) 54%, rgba(231,125,17,1) 100%);
+$jupiter: linear-gradient(200deg, rgba(80,121,146,1) 23%, rgba(206,165,137,1) 57%, rgba(193,125,107,1) 100%);
+$saturn: linear-gradient(300deg, rgba(206,184,184,1) 23%, rgba(234,214,184,1) 71%, rgba(191,189,175,1) 100%);
+$uranus: linear-gradient(10deg, rgba(175,219,245,1) 37%, rgba(98,174,231,1) 68%, rgba(46,132,206,1) 100%);
+$neptune: linear-gradient(90deg, rgba(63,84,186,1) 0%, rgba(155,163,217,1) 61%, rgba(133,173,219,1) 100%);
 
 #zen-explanation{
   padding-left: 15%;
-    width: 80%;
-    margin-bottom: 9em;
+    width: 85%;
+    padding-bottom: 9em;
     position: relative;
 }
 .explanation{
+    z-index: 0;
+    background: rgb(247,247,190);
+    background: $suntospace;
     &:after{
         content: "";
         display: block;
         width: 50px;
         height: 50px;
         border-radius: 50%;
-         z-index: -1;
+         z-index: $planetz;
         position: absolute;
         left: 0;
         top: 0;
-        background-color: purple;
+        background: rgb(173,168,165);
+        background: $mercury;
        
     }
     &:before{
@@ -27,12 +41,12 @@ $hieght: 100px;
         width: 75px;
         height: 75px;
         border-radius: 50%;
-         z-index: -1;
+        z-index: $planetz;
          position: absolute;
         left: .5em;
         top: 4em;
-       
-        background-color: red;
+        background: rgb(248,226,176);
+        background: $venus;
        
         
         
@@ -42,6 +56,7 @@ $hieght: 100px;
 
 #zen-explanation h3{
     font-size: 2em;
+    margin-top: 0;
     
     &:after{
         content: "";
@@ -49,11 +64,11 @@ $hieght: 100px;
         width: $width;
         height: $hieght;
         border-radius: 50%;
-         z-index: -1;
+         z-index: $planetz;
         position: absolute;
         left: .65em;
         top: 5em;
-        background-color: blue;
+        background: $earth;
        
     }
     &:before{
@@ -62,11 +77,12 @@ $hieght: 100px;
         width: 65px;
         height: 65px;
         border-radius: 50%;
-         z-index: -1;
+         z-index: $planetz;
         position: absolute;
         left: 2em;
         top: 8.5em;
-        background-color: orange;
+        background: rgb(69,24,4);
+        background: $mars;
         
         
         
@@ -76,17 +92,19 @@ $hieght: 100px;
 .explanation p:nth-last-child(1){
    margin-left: 7%;
     margin-top: 3em;
+    
      &:after{
         content: "";
         display: block;
         width: 120px;
         height: 120px;
         border-radius: 50%;
-         z-index: -1;
+         z-index: $planetz;
         position: absolute;
          top: 19em;
          left: 9em;
-        background-color: purple;
+         background: rgb(80,121,146);
+        background: $jupiter;
        
     }
     &:before{
@@ -95,11 +113,12 @@ $hieght: 100px;
         width: $width;
         height: $hieght;
         border-radius: 50%;
-         z-index: -1;
+         z-index: $planetz;
         position: absolute;
         top: 21.5em;
         left: 19em;
-        background-color: rosybrown;
+        background: rgb(206,184,184);
+        background: $saturn;
         
         
         
@@ -108,17 +127,20 @@ $hieght: 100px;
 }
 
 .explanation p {
+    color: #ffffff;
+    z-index: 25;
     &:after{
         content: "";
         display: block;
         width: 75px;
         height: 75px;
         border-radius: 50%;
-         z-index: -1;
+         z-index: $planetz;
         position: absolute;
         top: 22em;
         left: 28em;
-        background-color: lightyellow;
+        background: rgb(175,219,245);
+        background: $uranus;
        
     }
     &:before{
@@ -127,11 +149,12 @@ $hieght: 100px;
         width: 75px;
         height: 75px;
         border-radius: 50%;
-         z-index: -1;
-        background-color: green;
+         z-index: $planetz;
        position: absolute;
         top: 22em;
         left: 35em;
+        background: rgb(91,93,223);
+        background: $neptune;
         
         
     }
