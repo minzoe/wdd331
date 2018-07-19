@@ -50,7 +50,7 @@ SPacing
 #zen-intro {
   overflow: hidden;
   background-image: url(../images/zen.svg);
-  background-size: 50%;
+  background-size: 40%;
   background-repeat: no-repeat;
   background-position: 80% 0%;
   background-color: #A6C36C; }
@@ -90,7 +90,10 @@ header h2 {
   #zen-summary {
     margin-left: 8%;
     width: 40%;
-    margin-bottom: 7em; } }
+    margin-bottom: 7em; }
+
+  #zen-intro {
+    background-size: 40%; } }
 #zen-preamble h3 {
   text-align: center; }
 
