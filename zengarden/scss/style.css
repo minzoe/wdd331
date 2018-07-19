@@ -318,6 +318,10 @@ header h2 {
   background-position: 0% 0%;
   padding: 1em 3em 1em 2em; }
   .participation p {
-    color: #C0C0C0; }
+    color: #ffffff; }
+    .participation p:nth-of-type(3) {
+      padding-top: 8em; }
+    .participation p > a:link, .participation p abbr {
+      color: #6fce72; }
 
 /*# sourceMappingURL=style.css.map */
