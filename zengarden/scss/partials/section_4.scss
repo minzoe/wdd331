@@ -1,11 +1,12 @@
 
 .participation {
     overflow: hidden;
-    background-image: url(../images/milky-way.jpg);
+    background-image: linear-gradient(to top, transparent 50%, #000 99%),
+    linear-gradient(to bottom, transparent 50%, #000 99%), url(../images/milky-way.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 0% 0%;
-    padding: 1em 3em 1em 2em;
+    padding: 3em 3em 1em 5em;
     // padding-top: 1em;
     // padding-left: 3em;
     // padding-right: 3em;
