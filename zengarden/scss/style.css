@@ -334,4 +334,95 @@ header h2 {
     padding-top: 2em;
     padding-bottom: 3em; }
 
+.requirements {
+  padding: 1em;
+  background-color: black;
+  background-repeat: repeat;
+  background-size: 50px;
+  -webkit-mask-image: url(../../images/Star_background.svg);
+  mask-image: url(../../images/Star_background.svg);
+  -webkit-mask-size: 200px;
+  mask-size: 200px;
+  mask-repeat: repeat;
+  -webkit-mask-repeat: repeat; }
+  .requirements p {
+    color: white; }
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: darkblue; }
+  footer a {
+    color: white; }
+
+.sidebar {
+  background-color: black;
+  padding: 1em;
+  background-image: radial-gradient(#2A023f 50%, darkblue 100%);
+  overflow-y: hidden; }
+  .sidebar li {
+    color: white; }
+  .sidebar a {
+    color: lightblue; }
+  .sidebar h3 {
+    color: #A85D87; }
+  .sidebar .wrapper {
+    display: flex;
+    position: relative; }
+    .sidebar .wrapper div {
+      position: absolute; }
+      .sidebar .wrapper div:nth-child(2) {
+        right: 1em;
+        text-align: right; }
+      .sidebar .wrapper div:nth-child(3) {
+        bottom: 1em;
+        text-align: center;
+        width: 100%; }
+      .sidebar .wrapper div ul {
+        list-style: none;
+        padding: 0; }
+    .sidebar .wrapper::before {
+      content: "";
+      background-image: url(../../images/Spiral_Galaxy.svg);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 450px;
+      width: 450px;
+      height: 450px;
+      animation: rotate 2s infinite linear;
+      position: relative;
+      top: 50%;
+      margin: auto; }
+
+@media screen and (max-width: 590px) {
+  .sidebar {
+    overflow-y: auto; }
+    .sidebar .wrapper {
+      display: flex;
+      position: relative; }
+      .sidebar .wrapper div {
+        position: absolute; }
+        .sidebar .wrapper div:nth-child(1) {
+          text-align: center;
+          width: 100%; }
+        .sidebar .wrapper div:nth-child(2) {
+          bottom: 1em;
+          right: 0;
+          text-align: center;
+          width: 100%; }
+        .sidebar .wrapper div:nth-child(3) {
+          bottom: -8em;
+          text-align: center;
+          width: 100%; }
+        .sidebar .wrapper div ul {
+          list-style: none;
+          padding: 0; } }
+@keyframes rotate {
+  from {
+    transform: rotateZ(0deg); }
+  to {
+    transform: rotateZ(359deg); } }
+html, body {
+  margin: 0; }
+
 /*# sourceMappingURL=style.css.map */
