@@ -317,11 +317,57 @@ header h2 {
   background-repeat: no-repeat;
   background-position: 0% 0%;
   padding: 1em 3em 1em 2em; }
+  .participation:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 82%;
+    left: 0;
+    width: 100%;
+    height: 116.5%;
+    border-collapse: separate;
+    box-shadow: inset 0 50px 50px -16px, inset 0 -50px 50px -16px;
+    z-index: 1; }
   .participation p {
     color: #ffffff; }
     .participation p:nth-of-type(3) {
       padding-top: 8em; }
     .participation p > a:link, .participation p abbr {
       color: #6fce72; }
+
+.participation {
+  overflow: hidden;
+  background-image: url(../images/milky-way.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  padding: 1em 3em 1em 2em; }
+  .participation:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 82%;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    border-collapse: separate;
+    box-shadow: inset 0 50px 50px -16px, inset 0 -50px 50px -16px;
+    z-index: 1; }
+  .participation p {
+    color: #ffffff; }
+    .participation p:nth-of-type(3) {
+      padding-top: 8em; }
+    .participation p > a:link, .participation p abbr {
+      color: #6fce72; }
+
+.benefits {
+  overflow: hidden;
+  background-color: black;
+  background: url(../images/moon.gif) no-repeat right center;
+  background-size: 25%;
+  padding: 4em 32% 1em 4em; }
+  .benefits p {
+    padding-top: 2em;
+    padding-bottom: 3em; }
 
 /*# sourceMappingURL=style.css.map */
