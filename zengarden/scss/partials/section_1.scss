@@ -5,7 +5,7 @@ SPacing
 #zen-intro{
     overflow:hidden;
     background-image: url(../images/zen.svg);
-    background-size: 50%;
+    background-size: 40%;
     background-repeat: no-repeat;
     background-position: 80% 0%;
     background-color: $lightGreen;
@@ -57,5 +57,8 @@ header h2{
     margin-bottom: 7em;
     
 }
+    #zen-intro{
+        background-size: 40%;
+    }
 }
 
